@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Portal</title>
+     <!-- <style>
+        body{
+            background-color: crimson;
+        }
+    </style> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <super-header id="header" super-title="gioconi da paura" title-color="green"></super-header> <!-- se creiamo un tag con un meno in mezzo siamo certi che è un tag creato da noi e non di default di html -->
+  <super-header id="header" super-title="gioconi da paura"></super-header> <!-- se creiamo un tag con un meno in mezzo siamo certi che è un tag creato da noi e non di default di html -->
   <games-list></games-list>
   <super-footer></super-footer>
 </body>
-<script src="./web-components/games-list-component.js"></script>
+  <script src="./web-components/game-card-component.js"></script>
+  <script src="./web-components/games-list-component.js"></script>
   <script src="./web-components/super-footer-component.js"></script>
   <script src="./web-components/super-header-component.js"></script>
   <script src="./main.js"></script>

@@ -7,15 +7,18 @@ class SuperFooterComponent extends HTMLElement{
  
     connectedCallback(){  
  
-     this.shadowRoot.innerHTML = `
-     
-     <style>
-     @import url('./web-components/super-footer-style.css');
-     </style>
-     
-     <p> ©Game Platform 2023 </p>
-     `
+        this.render();
     } 
+
+
+    render(){
+
+      this.shadowRoot.innerHTML = `
+     
+      <link rel="stylesheet" href="./web-components/super-footer-style.css">
+      <p>©Game Platform 2023</p>
+      `
+    }
  }
  
  
