@@ -20,9 +20,9 @@
 // header.setAttribute('title-color', color);
 // header.render();
 
-// function changeTitleColor() {
+function changeTitleColor() {
     
-//     const header = document.getElementById('header');
-//     header.setAttribute('title-color', 'pink');
-//     header.render();
-// }
+    const header = document.getElementById('header');
+    header.setAttribute('title-color', 'pink'); // va a cambiare attributo all'header
+    
+}

@@ -33,6 +33,16 @@ class SuperHeaderComponent extends HTMLElement{   //per gestire elemento html do
 
 
    }
+
+   attributeChangedCallback(name, oldValue, newValue){ // questa funzione ci dice cosa facciamo ogni volta che cambia un attributo
+      if (oldValue !== newValue) {
+        this.render();
+      }
+   }
+
+   static get observedAttributes(){   //questa funzione per dire quali sono gli attributi che vogliamo osservare, si usa sempre insieme alla funzione sopra
+    return ['title-color', 'super-title'];
+  }
 }
 
 
